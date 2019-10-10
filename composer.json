@@ -14,7 +14,9 @@
         "laravel/framework": "^6.0",
         "laravel/passport": "^7.4",
         "laravel/tinker": "^1.0",
-        "laravel/ui": "^1.0"
+        "laravel/ui": "^1.0",
+        "pusher/pusher-php-server": "^4.0",
+        "simplesoftwareio/simple-qrcode": "~2"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
