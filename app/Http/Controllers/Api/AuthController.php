@@ -62,9 +62,8 @@ class AuthController extends Controller
 
     public function userList(Request $request)
     {
-        sleep(1);
         $data = User::all();
-        return response($data, 200);
+        return response($data);
     }
 
     public function getQrCode(Request $request)
@@ -99,6 +98,7 @@ class AuthController extends Controller
         $validatedData = $request->validate([
             'text' => 'required',
         ]);
+
         $code = UniqueCode::where('unique_code', '=', $validatedData['text'])->first();
         if($code){
             //$code = UniqueCode::orderBy('created_at', 'desc')->first();
