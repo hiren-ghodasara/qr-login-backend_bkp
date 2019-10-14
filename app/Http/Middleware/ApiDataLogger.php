@@ -23,7 +23,7 @@ class ApiDataLogger
         return $next($request);
     }
 
-    public function terminate($request, Response $response)
+    public function terminate($request, $response)
     {
 
         if (env('API_DATALOGGER', true)) {
